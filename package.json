@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Rez0n4n/layout-designer-project-59#readme",
   "devDependencies": {
+    "bootstrap": "^5.3.7",
     "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^5.0.0",

@@ -1,0 +1,16 @@
+@use "sass:map";
+
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-breakpoints);
+$container-max-widths: map-merge($container-max-widths, $custom-max-widths);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "gray": $gray,
+);
