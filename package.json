@@ -1,0 +1,36 @@
+{
+  "name": "layout-designer-project-59",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/Rez0n4n/layout-designer-project-59/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Rez0n4n/layout-designer-project-59/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rez0n4n/layout-designer-project-59.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rez0n4n/layout-designer-project-59/issues"
+  },
+  "homepage": "https://github.com/Rez0n4n/layout-designer-project-59#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-svg-sprite": "^2.0.3",
+    "htmlhint": "^1.6.3",
+    "pug-lint": "^2.7.0",
+    "sass": "^1.89.2",
+    "stylelint": "^16.22.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1"
+  }
+}
