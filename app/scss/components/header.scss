@@ -1,0 +1,41 @@
+.navbar {
+  height: 72px;
+  border-top-left-radius: 16px;
+
+  @media (width < 768px) {
+    border-top-left-radius: 0;
+  }
+
+  &-logo {
+    max-width: 25px;
+    max-height: 40px;
+    margin-left: 1rem;
+
+    @media (width < 768px) {
+      max-width: 15px;
+      max-height: 25px;
+    }
+  }
+}
+
+.nav-item {
+  display: flex;
+
+  img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 8px;
+    @media (width < 768px) {
+      margin-right: 40px;
+    }
+  }
+
+  .navigation-text {
+    font-size: 14px;
+    margin-right: 32px;
+
+    @media (width < 768px) {
+      display: none;
+    }
+  }
+}

@@ -18,8 +18,8 @@ const pug2html = () => {
 
 // Наблюдение за изменениями
 const watchFiles = () => {
-  watch("app/scss/**/*.scss", compileSass);
-  watch("app/pug/**/*.pug", compilePug);
+  watch("app/scss/**/*.scss", sass2css);
+  watch("app/pug/**/*.pug", pug2html);
 };
 
 exports.default = parallel(sass2css, pug2html);

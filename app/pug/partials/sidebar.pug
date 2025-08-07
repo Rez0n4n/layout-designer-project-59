@@ -1,2 +1,51 @@
-div.col.col-4.py-5.px-4
-    div Блок сайдбара
+div.py-5.px-4.order-0.order-md-1
+    h2.h2 Контакты
+    form.d-flex
+        input.form-control.me-2(type="search" placeholder="Поиск" aria-label="Поиск")
+    div.contacts.scroll
+        -
+            var contacts = {
+                "A": [{
+                name: "Алексей Примадонин",
+                status: "Онлайн",
+                avatar: "/app/img/avatar_3.jpg"
+                }],
+
+                "В": [{
+                name: "Вениамин Редакторович",
+                status: "Онлайн",
+                avatar: "/app/img/avatar_4.jpg"
+                }],
+
+                "Д": [{
+                name: "Джедай Падаванов",
+                status: "Был онлайн вчера",
+                avatar: "/app/img/avatar_2.jpg"
+                }],
+
+                "К": [{
+                name: "Кодовёнок Хекслетович",
+                status: "Был онлайн 3 часа назад",
+                avatar: "/app/img/avatar_1.jpg"
+                },
+                {
+                name: "Королева Верстальщина",
+                status: "Была онлайн вчера",
+                avatar: "/app/img/avatar_5.jpg"
+                }],
+
+                "П": [{
+                name: "Питонист Джангович",
+                status: "Был онлайн вчера",
+                avatar: "/app/img/avatar_6.jpg"
+                }],
+            }
+        each group, letter in contacts
+            div.contacts-group
+                h3.text-muted=letter
+                each user in group
+                    div.contacts-card
+                        img.rounded-circle(src=user.avatar,alt=user.name)
+                        div.contacts-data
+                            p.contacts-name.fs-6.fw-bold= user.name
+                            p.text-muted.contacts-status= user.status

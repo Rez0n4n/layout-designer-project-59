@@ -6,9 +6,10 @@ html(lang="en")
         title Bootstrap Advanced
         meta(name="description" content="")
         link(rel="stylesheet" type="text/css" href="styles/main.css")
-    body.vh-100
-        include ./pug/partials/header
-        main.border-gray.border.border-1.rounded-3.container.m-4
+    body.bg-gray.d-flex.justify-content-center.vh-100
+        main.border-gray.border.border-1.rounded-4.container.m-4.bg-white
             div.row
-                include ./pug/partials/sidebar
+                div.col-sm-12.col-lg-4.p-0.d-flex.flex-column
+                    include ./pug/partials/header
+                    include ./pug/partials/sidebar
                 include ./pug/partials/chat
