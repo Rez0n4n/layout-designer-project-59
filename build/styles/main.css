@@ -19023,6 +19023,16 @@ body {
   overflow: hidden;
 }
 
+main {
+  overflow: hidden;
+  border-radius: 16px;
+}
+@media (width < 768px) {
+  main {
+    border-radius: 0;
+  }
+}
+
 .scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -19033,10 +19043,24 @@ body {
   display: none;
 }
 
+.sidebar {
+  max-width: 464px;
+  min-width: 414px;
+  border-right: 1px solid #efefef;
+}
+.sidebar-search {
+  height: 72px;
+}
+
 .contacts {
-  max-height: 658px;
+  height: calc(100vh - 370px);
   display: flex;
   flex-direction: column;
+}
+@media (width < 768px) {
+  .contacts {
+    height: calc(100vh - 280px);
+  }
 }
 .contacts h3, .contacts .h3 {
   font-size: 1rem;
@@ -19047,7 +19071,9 @@ body {
 }
 .contacts-card {
   display: flex;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
+  padding-left: 16px;
+  padding-right: 40px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.0784313725);
   align-items: center;
 }
@@ -19057,6 +19083,8 @@ body {
   margin-right: 1.5rem;
 }
 .contacts-data {
+  width: 100%;
+  max-width: 286px;
   display: flex;
   flex-direction: column;
 }
@@ -19068,19 +19096,33 @@ body {
   margin: 0;
 }
 
+.t-overflow {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
 .navbar {
   height: 72px;
-  border-top-left-radius: 16px;
+  padding: 0;
+  max-width: 464px;
+  min-width: 414px;
+  flex-wrap: nowrap;
 }
-@media (width < 768px) {
+@media (width < 415px) {
   .navbar {
-    border-top-left-radius: 0;
+    min-width: none;
   }
+}
+.navbar-brand {
+  margin: 0;
+  padding: 0;
 }
 .navbar-logo {
   max-width: 25px;
   max-height: 40px;
   margin-left: 1rem;
+  margin-right: 28px;
 }
 @media (width < 768px) {
   .navbar-logo {
@@ -19088,26 +19130,37 @@ body {
     max-height: 25px;
   }
 }
+@media (900px < width < 1500px) {
+  .navbar-logo {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+}
 
 .nav-item {
   display: flex;
+  filter: brightness(0) invert(1);
 }
-.nav-item img {
+.nav-item button {
+  display: flex;
+}
+.nav-item button img {
   max-width: 25px;
   max-height: 25px;
   margin-right: 8px;
 }
 @media (width < 768px) {
-  .nav-item img {
+  .nav-item button img {
     margin-right: 40px;
   }
 }
-.nav-item .navigation-text {
+.nav-item button .navigation-text {
   font-size: 14px;
   margin-right: 32px;
+  color: var(--bs-light);
 }
 @media (width < 768px) {
-  .nav-item .navigation-text {
+  .nav-item button .navigation-text {
     display: none;
   }
 }
@@ -19122,6 +19175,7 @@ body {
   justify-content: center;
   height: 100%;
   text-align: center;
+  translate: 0 -72px;
 }
 .chat-scrsaver img {
   width: 100px;

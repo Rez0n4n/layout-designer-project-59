@@ -1,0 +1,33 @@
+div.py-5.px-4
+    h2.h2 Контакты
+    form.d-flex
+        input.sidebar-search.form-control.me-2(type="search" placeholder="Поиск" aria-label="Поиск")
+    div.contacts.scroll
+        -
+            var chats = 
+                [{
+                name: "Вениамин Редакторович",
+                message: "o_O",
+                avatar: "/app/img/avatar_4.jpg",
+                time: "11:45"
+                },
+                {
+                name: "Джедай Падаванов",
+                message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+                avatar: "/app/img/avatar_2.jpg",
+                time: "10:12"
+                },
+                {
+                name: "Алексей Примадонин",
+                message: "Тесты упали >_<",
+                avatar: "/app/img/avatar_3.jpg",
+                time: "8:53"
+                }];
+        each user in chats
+                div.contacts-card
+                    img.rounded-circle(src=user.avatar,alt=user.name)
+                    div.contacts-data
+                        div.d-flex.justify-content-between
+                            p.contacts-name.fs-6.fw-bold= user.name
+                            p.text-muted.contacts-status= user.time
+                        p.text-muted.t-overflow.contacts-status= user.message

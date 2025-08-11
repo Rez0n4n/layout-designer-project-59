@@ -1,41 +1,60 @@
 .navbar {
   height: 72px;
-  border-top-left-radius: 16px;
+  padding: 0;
+  max-width: 464px;
+  min-width: 414px;
+  flex-wrap: nowrap;
 
-  @media (width < 768px) {
-    border-top-left-radius: 0;
+  @media (width < 415px) {
+    min-width: none;
+  }
+
+  &-brand {
+    margin: 0;
+    padding: 0;
   }
 
   &-logo {
     max-width: 25px;
     max-height: 40px;
     margin-left: 1rem;
+    margin-right: 28px;
 
     @media (width < 768px) {
       max-width: 15px;
       max-height: 25px;
+    }
+
+    @media (900px < width < 1500px) {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
     }
   }
 }
 
 .nav-item {
   display: flex;
+  filter: brightness(0) invert(1);
 
-  img {
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 8px;
-    @media (width < 768px) {
-      margin-right: 40px;
+  button {
+    display: flex;
+
+    img {
+      max-width: 25px;
+      max-height: 25px;
+      margin-right: 8px;
+      @media (width < 768px) {
+        margin-right: 40px;
+      }
     }
-  }
+    .navigation-text {
+      font-size: 14px;
+      margin-right: 32px;
+      color: var(--bs-light);
 
-  .navigation-text {
-    font-size: 14px;
-    margin-right: 32px;
-
-    @media (width < 768px) {
-      display: none;
+      @media (width < 768px) {
+        display: none;
+      }
     }
   }
 }
