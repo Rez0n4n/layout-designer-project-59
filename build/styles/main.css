@@ -19053,7 +19053,7 @@ main {
 }
 
 .contacts {
-  height: calc(100vh - 370px);
+  height: calc(100vh - 300px);
   display: flex;
   flex-direction: column;
 }
@@ -19178,11 +19178,48 @@ main {
   translate: 0 -72px;
 }
 .chat-scrsaver img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 .chat-scrsaver p {
   margin: 0;
+}
+
+.profile-sidebar-card {
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 2.5rem 1rem;
+  margin: 3rem 0;
+}
+@media (width < 768px) {
+  .profile-sidebar-card {
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+.profile-sidebar-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.profile-sidebar-card h5, .profile-sidebar-card .h5 {
+  text-align: center;
+}
+.profile-sidebar-card p {
+  text-align: center;
+}
+.profile-sidebar-menu-data p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.profile-sidebar .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

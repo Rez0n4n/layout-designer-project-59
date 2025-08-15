@@ -14,16 +14,13 @@ html(lang="en")
             div.order-0.order-md-1.row.tab-content(id="main-tab-content").p-0
                 div.tab-pane.fade.active.show(id="contacts" role="tabpanel" aria-labelledby="contacts-btn" tabindex="0")
                     div.d-flex
-                        div.col-12.col-lg-5.p-0.d-flex.flex-column.sidebar
-                            include ./pug/partials/sidebar-contacts
+                        include ./pug/partials/sidebar-contacts
                         include ./pug/partials/chat
                 div.tab-pane.fade(id="chats" role="tabpanel" aria-labelledby="chats-btn" tabindex="0")
                     div.d-flex
-                        div.col-12.col-lg-5.p-0.d-flex.flex-column.sidebar
-                            include ./pug/partials/sidebar-chat
+                        include ./pug/partials/sidebar-chat
                         include ./pug/partials/chat
                 div.tab-pane.fade(id="profile" role="tabpanel" aria-labelledby="profile-btn" tabindex="0")
                     div.d-flex   
-                        div.col-12.col-lg-5.p-0.d-flex.flex-column.sidebar
-                            include ./pug/partials/sidebar-contacts
-                        div Тест профиля
+                        include ./pug/partials/sidebar-profile
+                        include ./pug/partials/chat
