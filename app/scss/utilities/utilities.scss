@@ -1,0 +1,85 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "radius": (
+      property: border-radius,
+      class: radius,
+      values: (
+        null: 1rem,
+      ),
+      responsive: true,
+    ),
+
+    "radius-left": (
+      property: border-top-left-radius border-bottom-left-radius,
+      class: radius-left,
+      values: (
+        null: 1rem,
+      ),
+      responsive: true,
+    ),
+
+    "radius-right": (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: radius-right,
+      values: (
+        null: 1rem,
+      ),
+      responsive: true,
+    ),
+
+    "radius-left-top": (
+      property: border-top-left-radius,
+      class: radius-left-top,
+      values: (
+        null: 1rem,
+      ),
+      responsive: true,
+    ),
+
+    "border": (
+      property: border,
+      class: border-all,
+      values: (
+        null: 1px solid #efefef !important,
+      ),
+      responsive: true,
+    ),
+
+    "border-top": (
+      property: border-top,
+      class: border-top,
+      values: (
+        null: 1px solid #efefef !important,
+      ),
+      responsive: true,
+    ),
+
+    "border-right": (
+      property: border-right,
+      class: border-right,
+      values: (
+        null: 1px solid #efefef !important,
+      ),
+      responsive: true,
+    ),
+
+    "border-bottom": (
+      property: border-bottom,
+      class: border-bottom,
+      values: (
+        null: 1px solid #efefef !important,
+      ),
+      responsive: true,
+    ),
+
+    "border-left": (
+      property: border-left,
+      class: border-left,
+      values: (
+        null: 1px solid #efefef !important,
+      ),
+      responsive: true,
+    ),
+  )
+);

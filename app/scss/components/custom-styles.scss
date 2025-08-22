@@ -94,3 +94,15 @@ main {
   text-wrap: nowrap;
   text-overflow: ellipsis;
 }
+
+.position-md-absolute {
+  @media (width>768px) {
+    position: absolute !important;
+  }
+}
+
+.sidebar-mg {
+  @media (width > 768px) {
+    margin-top: 72px !important;
+  }
+}
