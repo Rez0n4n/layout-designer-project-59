@@ -37,11 +37,11 @@ $utilities: map-merge(
       responsive: true,
     ),
 
-    "border": (
+    "border-all": (
       property: border,
       class: border-all,
       values: (
-        null: 1px solid #efefef !important,
+        null: 1px solid #efefef,
       ),
       responsive: true,
     ),
@@ -50,7 +50,7 @@ $utilities: map-merge(
       property: border-top,
       class: border-top,
       values: (
-        null: 1px solid #efefef !important,
+        null: 1px solid #efefef,
       ),
       responsive: true,
     ),
@@ -59,7 +59,7 @@ $utilities: map-merge(
       property: border-right,
       class: border-right,
       values: (
-        null: 1px solid #efefef !important,
+        null: 1px solid #efefef,
       ),
       responsive: true,
     ),
@@ -68,7 +68,7 @@ $utilities: map-merge(
       property: border-bottom,
       class: border-bottom,
       values: (
-        null: 1px solid #efefef !important,
+        null: 1px solid #efefef,
       ),
       responsive: true,
     ),
@@ -77,7 +77,7 @@ $utilities: map-merge(
       property: border-left,
       class: border-left,
       values: (
-        null: 1px solid #efefef !important,
+        null: 1px solid #efefef,
       ),
       responsive: true,
     ),

@@ -1,1 +1,29 @@
-
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bootstrap Advanced
+        meta(name="description" content="")
+        link(rel="stylesheet" type="text/css" href="styles/main.css")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+    body.bg-gray.d-flex.justify-content-center.vh-100
+        main.border-gray.container.m-0.m-lg-4.bg-white.p-0.d-flex.flex-column
+            div.col-12.col-lg-5.order-1.order-md-0.position-md-absolute
+                include ./pug/partials/header-chat
+            div.order-0.order-md-1.row.tab-content(id="main-tab-content").p-0
+                div.tab-pane.fade.active.show(id="contacts" role="tabpanel" aria-labelledby="contacts-btn" tabindex="0")
+                    div.d-flex
+                        include ./pug/partials/sidebar-contacts
+                        include ./pug/partials/current-chat
+                div.tab-pane.fade(id="chats" role="tabpanel" aria-labelledby="chats-btn" tabindex="0")
+                    div.d-flex
+                        include ./pug/partials/sidebar-chat
+                        include ./pug/partials/current-chat
+                div.tab-pane.fade(id="profile" role="tabpanel" aria-labelledby="profile-btn" tabindex="0")
+                    div.d-flex   
+                        include ./pug/partials/sidebar-profile
+                        include ./pug/partials/current-chat
+                div.tab-pane.fade(id="current-chat" role="tabpanel" aria-labelledby="current-chat-btn" tabindex="0")
+                    div.d-flex.d-md-none
+                        include ./pug/partials/sidebar-current-chat
